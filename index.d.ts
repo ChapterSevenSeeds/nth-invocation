@@ -5,7 +5,7 @@ declare module 'nthInvocation' {
      */
     type ArgsTransformerFunction = (args: [any[]]) => any[];
 
-    type Options = {
+    interface Options {
         /**
          * A function that transforms the aggregated arguments from each of the wrapper function calls
          * for use in the target function call. When calling the target function, the wrapper will spread the result of the argsTransformer.
@@ -13,12 +13,14 @@ declare module 'nthInvocation' {
          * Upon spreading the arguments into the target function, each argument that was used to call the wrapper function
          * will be spread into the target function.
          */
-        argsTransformer: ArgsTransformerFunction,
+        argsTransformer?: ArgsTransformerFunction;
+
         /**
          * If true, the wrapper function will be returned on each intermediate invocation of the wrapper.
          */
-        returnWrapper: Boolean
-    }
+        returnWrapper?: Boolean;
+    };
+
     /**
      * Invokes the target function every n times the wrapper function is called.
      * @param target The target function.

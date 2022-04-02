@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Invokes a target function every n invocations of the wrapper function.",
   "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "jest": "^27.5.1"
