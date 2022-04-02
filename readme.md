@@ -1,8 +1,8 @@
-# nthInvocation
+# nth-invocation
 ## By Tyson Jones
 Calls a target function every n times the wrapper function is called.
 ```js
-const nthInvocation = require('nthInvocation');
+const nthInvocation = require('nth-invocation');
 const wrapper = nthInvocation(console.log, 3);
 wrapper(1); // Prints nothing.
 wrapper(2); // Prints nothing.

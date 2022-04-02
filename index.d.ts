@@ -1,4 +1,4 @@
-declare module 'nthInvocation' {
+declare module 'nth-invocation' {
     /**
      * @param args An array of argument arrays.
      * @returns The resulting transformed argument list.
@@ -19,7 +19,7 @@ declare module 'nthInvocation' {
          * If true, the wrapper function will be returned on each intermediate invocation of the wrapper.
          */
         returnWrapper?: Boolean;
-    };
+    }
 
     /**
      * Invokes the target function every n times the wrapper function is called.
