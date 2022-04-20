@@ -3,7 +3,7 @@ declare module 'nth-invocation' {
      * @param args An array of argument arrays.
      * @returns The resulting transformed argument list.
      */
-    type ArgsTransformerFunction = (args: [any[]]) => any[];
+    type ArgsTransformerFunction = (args: any[][]) => any[];
 
     interface Options {
         /**

@@ -1,6 +1,6 @@
 {
   "name": "nth-invocation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Invokes a target function every n invocations of the wrapper function.",
   "main": "index.js",
   "types": "index.d.ts",

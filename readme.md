@@ -16,7 +16,7 @@ nthInvocation(/* Target function */, /* n */, /* optional options */);
 The first two paramters are self explanatory. The third parameter has the following interface:
 ```ts
 interface Options {
-    argsTransformer?: (args: [any[]]) => any[];
+    argsTransformer?: (args: any[][]) => any[];
     returnWrapper?: Boolean;
 }
 ```
